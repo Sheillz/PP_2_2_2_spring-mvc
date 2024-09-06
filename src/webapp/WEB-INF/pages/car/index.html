@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+<div>
+    <th:block th:each="car : ${cars}">
+        <h1 th:text="${car.getModel()}"></h1>
+        <h1 th:text="${car.getEngine()}"></h1>
+        <h1 th:text="${car.getColor()}"></h1>
+        <br/>
+        <hr/>
+    </th:block>
+</div>
+<br/>
+<hr/>
+<a href="/car/count/5">Cars5</a>
+<br/>
+<hr/>
+<a href="/car/count/4">Cars4</a>
+<br/>
+<hr/>
+<a href="/car/count/3">Cars3</a>
+<br/>
+<hr/>
+<a href="/car/count/2">Cars2</a>
+<br/>
+<hr/>
+<a href="/car/count/1">Cars1</a>
+<br/>
+<hr/>
+</body>
+</html>

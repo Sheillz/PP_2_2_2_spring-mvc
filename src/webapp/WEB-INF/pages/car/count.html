@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <th:block th:each="car : ${cars}">
+        <h1 th:text="${car.getModel()}"></h1>
+        <h1 th:text="${car.getEngine()}"></h1>
+        <h1 th:text="${car.getColor()}"></h1>
+        <br/>
+        <hr/>
+    </th:block>
+</div>
+<a href="/car">Cars</a>
+</body>
+</html>
